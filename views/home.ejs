@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .chat-message {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        h3 {
+            margin: 0;
+            background-color: rgba(0, 149, 190, 0.912);
+            color:#fff;
+            padding: 5px;
+
+        }
+    </style>
+    <title>Home</title>
+</head>
+<body>
+    <h1>Welcome to the Chat Application</h1>
+    <div class="chat">
+        <% chats.forEach(function(chat) { %>
+            <div class="chat-message">
+                <p><h3><b>From:</b>&nbsp;<%= chat.from %></h3> <%= chat.message %></p>
+                <p><h3><b>Recieved By:</b>&nbsp;<%= chat.to %></h3></p>
+                <p><em><%= chat.timestamp.toLocaleString() %></em></p>
+            </div>
+        <% }); %>
+    </div>
+</body>
+</html>

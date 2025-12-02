@@ -1,0 +1,25 @@
+{
+  "name": "chat-app-backend-",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/CodeWithJatinSh/Chat-App-Backend-#readme",
+  "bugs": {
+    "url": "https://github.com/CodeWithJatinSh/Chat-App-Backend-/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeWithJatinSh/Chat-App-Backend-.git"
+  },
+  "license": "ISC",
+  "author": "Jatin Sohanvi",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.2.1",
+    "mongoose": "^9.0.0"
+  }
+}
