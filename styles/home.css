@@ -1,0 +1,84 @@
+
+body{
+    background-color: #fe7f9c;
+}
+.chat-message {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 25px;
+    background-color: #f9f9f9;
+    }
+
+.btn-container {
+    display: flex;
+    justify-content: flex-end; /* moves buttons to the right */
+    gap: 10px; /* optional spacing between buttons */
+    padding-right: 20px; /* optional: adjust spacing from right edge */
+}
+
+.delete-button {
+    background-color: #ff4d4d; 
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 5px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    }
+.edit-button {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 5px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    }
+h3 {
+    margin: 0;
+    background-color: rgba(0, 149, 190, 0.912);
+    color:#fff;
+    padding: 5px;
+    border-radius: 20px;
+    }
+
+h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.616);
+    padding: 15px;
+    border-radius: 15px;
+    }
+
+    h5 {
+        font: 1em "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 700;
+        color: #333;
+        text-align: justify;
+    }
+    
+    button {
+        background-color: #089c0d; 
+        border: none;
+        color: white;
+        font-weight: bold;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 10px 2px;
+        cursor: pointer;
+        border-radius: 12px;
+    }

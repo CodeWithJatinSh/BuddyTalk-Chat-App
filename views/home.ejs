@@ -4,32 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        .chat-message {
-            border: 1px solid #ccc;
-            padding: 10px;
-            margin: 10px 0;
-        }
-        h3 {
-            margin: 0;
-            background-color: rgba(0, 149, 190, 0.912);
-            color:#fff;
-            padding: 5px;
-
-        }
-    </style>
+    <link rel="stylesheet" href="/home.css">
     <title>Home</title>
 </head>
 <body>
-    <h1>Welcome to the Chat Application</h1>
+    <h1>BuddyTalk</h1>
     <div class="chat">
         <% chats.forEach(function(chat) { %>
             <div class="chat-message">
-                <p><h3><b>From:</b>&nbsp;<%= chat.from %></h3> <%= chat.message %></p>
-                <p><h3><b>Recieved By:</b>&nbsp;<%= chat.to %></h3></p>
+                <p><h3><b>From:</b>&nbsp;<%= chat.from %></h3><h5><%= chat.message %></h5></p>
+                <p><h3><b>Recieved By:</b>&nbsp; <%= chat.to %></h3></p>
                 <p><em><%= chat.timestamp.toLocaleString() %></em></p>
+                <div class="btn-container">
+                <button class="delete-button" onclick="location.href='/Chats/Delete/<%= chat._id %>';">Delete Message</button>
+                <button class="edit-button" onclick="location.href='/Chats/Edit/<%= chat._id %>';">Edit Message</button>
+                </div>
             </div>
         <% }); %>
     </div>
+    <form action="/Chats/Create" method="get">
+        <button type="submit">Create New Message</button>
+    </form>
 </body>
 </html>
